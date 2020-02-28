@@ -1,0 +1,116 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iman.engineer | a site owned by some person">
+    <meta name="author" content="Hunter | Hoofer">
+    <title>iman.engineer | Home</title>
+        
+    <style>
+        * {
+        margin: 0px;
+        padding: 0px;  
+        }
+        body {
+         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;     
+         background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+         color: #e9e9e9;
+         text-shadow: 0px 0px 1px #000000;
+         padding-bottom: 50px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        #left-nav {
+            float: left;
+            height: 50px;
+            line-height: 70px;
+            margin-left: 25px;
+            display: flex;
+            text-align: left;
+
+            
+        }
+        #right-nav {
+            float: right;
+            line-height: 70px;
+            margin-right: 25px;
+            display: flex;
+            text-align: right;
+        }
+        ul li{
+            list-style-type: none;
+            color: #e9e9e9;
+        }
+        header {
+            background-color: #0f0f0f;
+            height: 70px;
+            width: 100% - 5px;
+            display: block;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        a{ 
+            text-decoration: none;
+            font-size:30px;
+        }
+        hr {
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 1px;
+            width: 75%;
+        }
+
+        #hr-small{
+            width: 50%;
+        }
+
+
+        button {
+            color: #e9e9e9;
+            background-color: #0f0f0f;
+            border: 0;
+            box-shadow: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <ul id="left-nav">
+                <a href="index.html" style="color:#e9e9e9; vertical-align: middle;">iman.engineer</a>
+                
+            </ul>
+            <ul id="right-nav">
+                <h4 style="color:#e9e9e9; vertical-align: middle;">by Hunter</h4>
+            </ul>
+        </header>
+        <h1 style="text-align: center;">Random Insult Generator!</h1>
+        <h3 id="p" style="width: 100%; height: 100%; text-align: center;text-shadow: none;"></p>
+        <script>
+            fetch('https://raw.githubusercontent.com/dwyl/english-words/master/words.txt').then(response=> response.text()).then(text=>{
+        
+                var final = "you ";
+                for var(i=1,i<15,i++){
+                    var t = document.getElementById("p");
+                    text0 = text.split("\n");
+                    text1 = text0[Math.floor(Math.random() * text0.length)]
+                    final += text1+" ";
+                }
+                final++"moron."
+                t.appendChild(document.createTextNode(final));
+        
+             })
+        </script>
+
+
+
+
+
+    </body>
+</html>
