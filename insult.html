@@ -91,7 +91,7 @@
             </ul>
         </header>
         <h1 style="text-align: center;">Random Insult Generator!</h1>
-        <h3 id="p" style="width: 100%; height: 100%; text-align: center;text-shadow: none;"></p>
+        <h3 id="p" style="width: 100%; height: 100%; text-align: center;text-shadow: none;"></h3>
         <script>
             var insultEnd = [
                 "hairy moron",
@@ -163,7 +163,7 @@
                     final += text1+" ";
                 }
                 final += insultEnd[Math.floor(Math.random() * insultEnd.length)]+"."
-                t.textContent = document.createTextNode(final);
+                t.textContent = final;
              }
 
 
