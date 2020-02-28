@@ -96,7 +96,7 @@
             fetch('https://raw.githubusercontent.com/dwyl/english-words/master/words.txt').then(response=> response.text()).then(text=>{
         
                 var final = "you ";
-                for (var i=1,i<15,i++){
+                for (var i=1;i<15;i++){
                     var t = document.getElementById("p");
                     text0 = text.split("\n");
                     text1 = text0[Math.floor(Math.random() * text0.length)]
