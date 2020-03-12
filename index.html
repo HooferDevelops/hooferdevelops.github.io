@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+
+        <script>
+            jQuery($ => {
+              // The speed of the scroll in milliseconds
+              const speed = 1000;
+          
+              $('a[href*="#"]')
+                .filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
+                .unbind('click.smoothScroll')
+                .bind('click.smoothScroll', event => {
+                  const targetId = event.currentTarget.getAttribute('href').split('#')[1];
+                  const targetElement = document.getElementById(targetId);
+          
+                  if (targetElement) {
+                    event.preventDefault();
+                    $('html, body').animate({ scrollTop: $(targetElement).offset().top}, speed);
+                  }
+                });
+            });
+          </script>
+
+
+        <div class="nav-top">
+            <p class="title">iman.engineer</p>
+            
+            
+            
+            <a href="misc">Misc</a>
+            <a href="games">Games</a>
+            <a href="bdplugins">BD Plugins</a>
+            <a href="about">About</a>
+            <a class="enabled" href="/">Home</a>
+        </div>
+
+        <h1 class="title">Home</h1>
+        <div class="titleline"></div>
+        <p class="mainparagraphs">Hi there, I'm Hunter(I go by Hoofer on the internet)!</p>
+        <p class="mainparagraphs">I do a lot of random things, and decided to share it all with the world!</p>
+        <a href="#middle" class="readmorebutton">Read More!</a>
+        <span class="anchor" id="middle" style="margin-top: 100%;"></span>
+        <h1 class="title">More Info</h1>
+        <div class="titleline"></div>
+        <p class="mainparagraphs">Here you can find majority of my work that I make public.</p>
+        <p class="mainparagraphs">Some stuff I post is also on my github, which is public for all to see!</p>
+        <p class="mainparagraphs">Feel free to check out whatever you like, a lot of my work is open-source and I don't care what you do with it (just don't steal credit).</p>
+        <p class="mainparagraphs" style="margin-bottom: 100%;">Thanks for checking this place out!</p>
+        <p class="mainparagraphs">uh... why are you still here?</p>
+    </body>
+</html>
