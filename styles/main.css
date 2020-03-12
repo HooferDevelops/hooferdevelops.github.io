@@ -61,6 +61,25 @@ p {
     background-color: #23272A;
     overflow: hidden;
 }
+
+.contactmethods {
+    padding: 0;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+}
+
+.contactmethods a {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    text-align: center; 
+    margin:0 auto;
+    width: 15%;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
 .nav-top .title {
     font-family: 'Roboto', sans-serif;
     color: #7289DA;
