@@ -1,34 +1,51 @@
-# Hoofer's Minecraft Plugins for 1.15.2+
+# Hoofer's Portfolio
+**Last Updated:** **
 
-These are my minecraft plugins made for version 1.15.2 on Spigot.
+Hi there! I'm a small developer that does some fun coding projects.
+Most of my work is done in the following languages:
+Lua, C#, JavaScript, and Java
 
 
-## Notice
+# Notice
 
-  - These plugins were made for special use cases. Some plugins may require Vault (1.15.2) or EssentialsX (1.15.2), thanks!
+  - A lot of projects here were either commissioned to me or made merely for fun. Some of these projects weren't made to be optimized, just for concepts.
 
-## Source Code
-
-  - All of my plugins are open sourced, feel free to see how things work. I'm new to Java, so things might look a little weird. Apologies in advance!
-
-## Plugin Information
-
-#### Duel 1.15.2
-  - A plugin that disables pvp and adds a /duel and /pvp command.
-  - "/pvp": Enables/disables pvp. The other targets must have this enabled to be able to hurt them.
-  - "/duel [user]": Sends a request to have a fight to the death with the other person.
-#### ExplosiveChestProtect 1.15.2
-  - A plugin that disables the breaking of any block that has an inventory. Useful for creeper explosions.
-#### JukeboxHopper 1.15.2
-  - A plugin that allows the ability of hoppers and jukeboxes.
-  - Any hopper can input a music disc into a jukebox and the disc will be removed from the hopper below when the disc is finished.
-#### Wavers 1.15.2
-##### REQUIRES VAULT
-  - Adds slips that can hold money, kind of like bank checks or dollar bills.
-  - To use: Grab a piece of paper, and run the command "/waver [amount]". This will transform the piece of paper into a special new item called a waver.
-#### HeadDrop 1.15.2
-  - Adds the ability for players to drop their head upon death.
-  - If killed by a player, the head will display who killed them.
-  
-## Extra Info
-Have any questions? Message me on twitter "twitter.com/leHoofer", or contact me on Discord: "Hoofer#0001"
+# Projects
+## BetterDiscord Plugins & Themes
+#### NoGiftIcon
+    Removes the gift icon from the message bar
+**Example:**
+![Image](https://cdn.discordapp.com/attachments/608856607098535957/709845020408152185/unknown.png)
+![Image](https://cdn.discordapp.com/attachments/608856607098535957/709845076200915005/unknown.png)
+#### GhostMessageFixed
+    Instantly delete your messages to mess with your friends
+**Example:**
+![Image](https://cdn.discordapp.com/attachments/608856607098535957/709845860837621820/FqrocZP4DC.gif)
+![Image](https://cdn.discordapp.com/attachments/608856607098535957/709845992911929465/Discord_dt3gs202e5.png)
+#### MessageFilter
+    Beautify your messages with ease
+**Example:**
+![Image](https://cdn.discordapp.com/attachments/608856607098535957/709852937811132426/ptWB91YFbh.gif)
+![Image](https://cdn.discordapp.com/attachments/608856607098535957/709853048515723385/unknown.png)
+## Discord Bot Framework
+    Discord Bot Framework is what I use to base all my Discord bots off of. This framework is coded in NodeJS and is meant to make your experience with bots easier.
+**Previews:**
+![Image](https://cdn.discordapp.com/attachments/608856607098535957/709853905592254464/unknown.png)
+![Image](https://cdn.discordapp.com/attachments/608856607098535957/709853490347901010/unknown.png)
+![Image](https://cdn.discordapp.com/attachments/608856607098535957/709853548124438558/unknown.png)
+## Minecraft Plugins
+    All of my plugins were made in Java and were for a specific private server in mind. These were merely for practice and learning experiences.
+![Image](https://cdn.discordapp.com/attachments/608856607098535957/709854501166776330/unknown.png)
+[**View ALL documentation about these here**](https://github.com/HooferDevelops/Minecraft-Plugins-1.15.2)
+## Roblox RAP Scraper
+    This scraper was a commission as a Roblox message bot to message people over a certain amount of RAP. This worked fine, however all source code is private as this was a paid job.
+**Previews:**
+![Image](https://cdn.discordapp.com/attachments/608856607098535957/709854912543981640/unknown.png)
+## Rocket Game (Unity)
+    Rocket Game is a game I am currently developing in my free time. The game is built around logic, puzzles, and a complicated movement style. The game is made to make people get angry really fast, while being dedicated to beat the game.
+**Previews:**
+![Image](https://cdn.discordapp.com/attachments/608856607098535957/709857008978886716/unknown.png)
+[YouTube Video Preview](https://www.youtube.com/watch?v=JrfFVlAiBUM)
+[Store Page](https://discord.gg/tWwHhVy)
+# Contact Information
+Have any questions? Message me on twitter @[leHoofer](https://www.twitter.com/leHoofer), or contact me on Discord: "Hoofer#0001"
