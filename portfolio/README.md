@@ -1,5 +1,5 @@
 # Hoofer's Portfolio
-**Last Updated:** **
+**Last Updated:** *5/12/2020*
 
 Hi there! I'm a small developer that does some fun coding projects.
 Most of my work is done in the following languages:
