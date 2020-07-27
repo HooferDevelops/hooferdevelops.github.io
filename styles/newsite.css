@@ -57,7 +57,7 @@ a {
 }
 @media (max-width: 1000px) {
     body {
-        zoom: 1;
+        zoom: 2;
     }
     .gradient {
         position: absolute !important;
