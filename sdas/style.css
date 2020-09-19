@@ -6,6 +6,12 @@ font-family: 'Source Sans Pro', sans-serif;
 .info {
 	text-align: center;
 	font-style: italic;
+	display: block;
+	text-decoration: none;
+}
+a {
+	margin-top: 15px;
+	color: blue;
 }
 textarea {
 	display: block;
