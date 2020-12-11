@@ -56,6 +56,7 @@ https://www.roblox.com/games/5374466990/Epic-Battlegrounds-Archived
 ### Toggle Clothing Layer's Mod
     Quickly toggles your clothing layers with a binded key.
 https://github.com/HooferDevelops/hoofers-toggle-clothing
+
 ![Image](https://github.com/HooferDevelops/hoofers-toggle-clothing/raw/main/readme-images/preview.gif)
 # Contact Information
 Have any questions? Message me on twitter @[leHoofer](https://www.twitter.com/leHoofer), or contact me on Discord: "Hoofer#0001"
