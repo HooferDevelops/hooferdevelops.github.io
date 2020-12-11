@@ -1,6 +1,6 @@
 
 # Hoofer's Portfolio
-**Last Updated:** *11/20/2020*
+**Last Updated:** *12/11/2020*
 
 Hi there! I'm a small developer that does some fun coding projects.
 Most of my work is done in the following languages:
@@ -51,5 +51,11 @@ https://www.roblox.com/games/5374466990/Epic-Battlegrounds-Archived
     All of my plugins were made in Java and were for a specific private server in mind. These were merely for practice and learning experiences.
 ![Image](https://cdn.discordapp.com/attachments/608856607098535957/709854501166776330/unknown.png)  
 [**View ALL documentation about these here**](https://github.com/HooferDevelops/Minecraft-Plugins-1.15.2)  
+## Minecraft Mods
+    Some Minecraft mod(s) I made for fabric. These were mainly designed with features I wanted in the game.
+### Toggle Clothing Layer's Mod
+    Quickly toggles your clothing layers with a binded key.
+https://github.com/HooferDevelops/hoofers-toggle-clothing
+![Image](https://github.com/HooferDevelops/hoofers-toggle-clothing/raw/main/readme-images/preview.gif)
 # Contact Information
 Have any questions? Message me on twitter @[leHoofer](https://www.twitter.com/leHoofer), or contact me on Discord: "Hoofer#0001"
