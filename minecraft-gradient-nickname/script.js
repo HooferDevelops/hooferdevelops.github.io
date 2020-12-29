@@ -227,6 +227,13 @@ var gradients = [
         "#1e130c",
         "#9a8478"
     ]},
+    {name: "Lava",
+    colors: [
+        "#e40a0a",
+        "#ff5a00",
+        "#fff800"
+    ]},
+    
 ]
 
 
