@@ -12,10 +12,10 @@ a {
     transition: .5s;
 }
 .reference > a:hover {
-    color: #ff3635;
+    color:lightskyblue;
 }
 .social > a:hover {
-    color: #ff3635;
+    color: lightskyblue;
 }
 .glow:hover {
     text-shadow: 0 0 32px white;
@@ -74,7 +74,6 @@ a {
         text-align: center;
         top: 200px;
     }
-
     .stuff {
         position: absolute;
         top: 200px;
@@ -144,17 +143,24 @@ a {
 #category > a > #object {
     float: left;
     width: 40%;
-    padding: 2% 1%;
+    padding: 3% 1%;
     margin: 2% 2%;
     border-radius: 6px;
     background-color: rgb(20,20,20);
+    padding-top: 1%;
 }
 .tile-title {
     font-size: 25px;
     top: 0;
 }
 .tile-about {
+    display: block;
     margin: 15px 0px;
+    height: 25%;
+    font-size: 100%;
+    max-height: 90px;
+    height: 90px;
+    min-height: 90px;
 }
 .tile-information {
     position: absolute;
@@ -162,11 +168,12 @@ a {
     font-size: 12px;
 }
 #object {
+    transition: .1s linear;
     position: relative;
 }
 .preview {
     width: 25px;
-    border-radius: 6px;
+    border-radius: 3px;
     vertical-align: middle;
 }
 h1 {
