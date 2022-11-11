@@ -1,0 +1,59 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    .content {
+        margin: 15px;
+        padding: 15px;
+
+        background-color: var(--background-color-light);
+        display: flex;
+
+        width: 100%;
+        max-width: 500px;
+        
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h4, .info {
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 500px) {
+        .content {
+            flex-direction: row;
+        }
+
+        h4, .info {
+            text-align: left;
+        }
+    }
+
+    h4, .info {
+        margin: 0;
+        margin-left: 5px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .alias {
+        font-size: rem;
+        margin: 0;
+    }
+}

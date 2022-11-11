@@ -1,12 +1,11 @@
+/* Purple Dark Theme */
 :root {
-  --background-color: #f2e9e4;
-  --background-color-dark: #e9d8d2;
-  --background-color-darker: #e0c4bc;
-  --background-color-light: #f8f1ed;
-  --background-color-lighter: #faf8f6;
+  --background-color: #0e0a0e;
+  --background-color-light: #1a131a;
+  --background-color-lighter: #2a1d2a;
 
-  --text-color: #22223b;
-  --text-color-light: #4a4e69;
+  
+  --text-color: #effaff;
 }
 
 body {
