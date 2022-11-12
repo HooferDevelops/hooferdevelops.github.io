@@ -4,8 +4,32 @@ import Card from './Card.js';
 function App() {
   return (
     <div className="App">
-      <h1>hooferdevelops.github.io</h1>
-      <Card title="Programming" name="Hunter" alias="Hoofer" img="https://avatars.githubusercontent.com/u/60201971?v=4"/>
+      <Card 
+        info="
+        Hello! This is my site for showing off my current projects and thoughts. 
+        If you need to contact me, I have provided my contact information.
+        " 
+        name="Hunter" 
+        alias="Hoofer" 
+        img="https://avatars.githubusercontent.com/u/60201971?v=4"
+        links = {[
+          {
+            name: "GitHub",
+            icon: "fab fa-github",
+            link: "https://github.com/HooferDevelops"
+          },
+          {
+            name: "YouTube",
+            icon: "fab fa-youtube",
+            link: "https://www.youtube.com/@Hoofer"
+          },
+          {
+            name: "Discord",
+            icon: "fab fa-discord",
+            link: "https://discord.com/Typical"
+          }
+        ]}
+      />
     </div>
   );
 }
