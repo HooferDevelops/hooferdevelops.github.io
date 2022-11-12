@@ -1,11 +1,7 @@
 # Post Title
-::DATE
-11/11/2022
-::
-::AUTHOR
-Hunter
-::
-
+Date: 11/11/2022
+Icon: TBD
+Content:
 This is some test content for a post.
 
 *I hope this works.*
