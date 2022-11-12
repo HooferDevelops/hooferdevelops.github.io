@@ -1,0 +1,14 @@
+<post>
+  <title>First Post!</title>
+  <date>11/12/2022</date>
+  <icon>fa-solid fa-1</icon>
+  <content>
+    This is the first official post for hooferdevelops.github.io
+    
+    I am doing this post to test how everything is functioning, <i>fingers crossed</i> it will work! 🤞
+    
+    Mainly wanted to create this site for infographs and development logs, it will be interesting to see how everything turns out. I am <i>quite</i> proud of this as it is the first site I have fully completed using <a href="https://reactjs.org/"React</a>.
+  
+    That is all I will say for this post, thank you for tuning in!
+  </content>
+</post>
