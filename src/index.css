@@ -9,6 +9,12 @@
   --link-color: #B3A9F1;
 }
 
+html, body, #root, .App {
+  height: 100%;
+  overflow: auto;
+}
+
+
 body {
   margin: 0;
   font-family: 'Gotham', sans-serif;
