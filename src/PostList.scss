@@ -38,7 +38,6 @@
             top: 10px;
 
             font-size: 15px;
-
             font-weight: 100;
 
             color: var(--link-color);
@@ -49,6 +48,9 @@
             overflow: hidden;
             overflow-wrap: break-word;
             text-align: justify;
+
+            -webkit-mask-image: linear-gradient(0deg, transparent 5px, rgb(0, 0, 0) 77px);
+            mask-image: linear-gradient(0deg, transparent 5px, rgb(0, 0, 0) 77px);
 
             width: 100%;
             height: 90px;
