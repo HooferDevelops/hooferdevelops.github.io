@@ -22,11 +22,27 @@
 
         position: relative;
 
+        .icon {
+            position: absolute;
+            top: 20px;
+            left: 15px;
+
+            font-size: 1.3rem;
+        }
+
         .title {
+            position: relative;
             text-align: left;
             font-size: 25px;
 
+            margin-left: 25px;
             margin-top: 0px;
+
+            width: calc(70%);
+            height: 30px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            line-break: strict;
             
             color: var(--text-color);
         }

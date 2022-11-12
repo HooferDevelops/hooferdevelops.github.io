@@ -35,7 +35,7 @@ class PostList extends React.Component {
                     let content = document.querySelector("content").innerHTML.replace(/\n/g, "<br />").replace("<br />", "");
 
                     // Limit the length of the post to 500 characters.
-                    content = content.substring(0, 500) + (content.length > 500 ? "..." : "");
+                    content = content.substring(0, 300) + (content.length > 300 ? "..." : "");
 
                     // Limit the length of the title to 20 characters.
                     title = title.substring(0, 20) + (title.length > 20 ? "..." : "");
@@ -61,7 +61,8 @@ class PostList extends React.Component {
                     this.state.posts.map((post, index) => {
                         return (
                             <div className="post" key={index}>
-                                <h1 className="title"><i className={post.icon}></i> {post.title}</h1>
+                                <i className={`${post.icon} icon`}></i>
+                                <h1 className="title">{post.title}</h1>
                                 <h2 className="date"><i className="fa-solid fa-calendar"></i> {post.date}</h2>
                                 <div className="content" dangerouslySetInnerHTML={{__html: post.content}}></div>
                             </div>
