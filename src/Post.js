@@ -3,10 +3,6 @@ import React from "react";
 import "./Post.scss"
 
 class Post extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <>
