@@ -4,16 +4,26 @@
 :root {
   --background-color: #1C1523;
   --background-color-dark: #170F1F;
+  --background-color-darker: #120A18;
+  --background-color-light: #2A1F3A;
+
+  --blur-color: #1c1523b2;
+
 
   --text-color: #effaff;
   --link-color: #B3A9F1;
+}
+
+::-moz-selection, ::selection {
+  color: var(--background-color);
+  background: var(--link-color);
+  text-shadow: 1px 1px 3px var(--background-color);
 }
 
 html, body, #root, .App {
   height: 100%;
   overflow: auto;
 }
-
 
 body {
   margin: 0;
@@ -24,6 +34,14 @@ body {
 
 b, strong, h1, h2, h3, h4, h5, h6 {
   font-family: 'Gotham Black', sans-serif;
+}
+
+a {
+    margin-left: 10px;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--link-color);
 }
 
 code {

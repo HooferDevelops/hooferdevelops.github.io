@@ -22,6 +22,8 @@
 
         position: relative;
 
+        cursor: pointer;
+
         .icon {
             position: absolute;
             top: 20px;
@@ -40,9 +42,10 @@
 
             width: calc(70%);
             height: 30px;
+            
             text-overflow: ellipsis;
-            overflow: hidden;
-            line-break: strict;
+            white-space: nowrap;
+            overflow:hidden;
             
             color: var(--text-color);
         }

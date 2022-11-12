@@ -2,6 +2,8 @@ import "./PostList.scss";
 import React from "react";
 import axios from "axios";
 
+import Spinner from "./Spinner.js";
+
 class PostList extends React.Component {
     constructor(props) {
         super(props);
@@ -27,6 +29,8 @@ class PostList extends React.Component {
                 responses = responses.map((post) => {
                     let parser = new DOMParser();
 
+                    console.log(post.data);
+
                     let document = parser.parseFromString(post.data, "text/xml");
 
                     let title = document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
@@ -35,16 +39,18 @@ class PostList extends React.Component {
                     let content = document.querySelector("content").innerHTML.replace(/\n/g, "<br />").replace("<br />", "");
 
                     // Limit the length of the post to 500 characters.
-                    content = content.substring(0, 300) + (content.length > 300 ? "..." : "");
+                    let shortenedContent = content.substring(0, 300) + (content.length > 300 ? "..." : "");
 
                     // Limit the length of the title to 20 characters.
-                    title = title.substring(0, 20) + (title.length > 20 ? "..." : "");
+                    let shortenedTitle = title.substring(0, 20) + (title.length > 20 ? "..." : "");
 
                     // Return the post
                     return {
                         title: title,
                         date: document.getElementsByTagName("date")[0].childNodes[0].nodeValue,
                         content: content,
+                        shortenedContent: shortenedContent,
+                        shortenedTitle: shortenedTitle,
                         icon: document.getElementsByTagName("icon")[0].childNodes[0].nodeValue
                     };
                 });
@@ -54,20 +60,31 @@ class PostList extends React.Component {
         });
     }
 
+    selectPost = (event) => {
+        if (this.props.postEvent) {
+            this.props.postEvent(event.target.value);
+        }
+    }
+
     render() {
         return (
             <div className="post-list">
                 {
                     this.state.posts.map((post, index) => {
                         return (
-                            <div className="post" key={index}>
+                            <div className="post" key={index} onClick={() => {
+                                this.selectPost({ target: { value: post } });
+                            }}>
                                 <i className={`${post.icon} icon`}></i>
-                                <h1 className="title">{post.title}</h1>
+                                <h1 className="title">{post.shortenedTitle}</h1>
                                 <h2 className="date"><i className="fa-solid fa-calendar"></i> {post.date}</h2>
-                                <div className="content" dangerouslySetInnerHTML={{__html: post.content}}></div>
+                                <div className="content" dangerouslySetInnerHTML={{__html: post.shortenedContent}}></div>
                             </div>
                         );
                     })
+                }
+                {
+                    this.state.posts.length === 0 ? <Spinner></Spinner> : null
                 }
             </div>
         );
