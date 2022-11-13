@@ -38,20 +38,7 @@ function App() {
                 ]}
             />
             <PostList
-                posts= {[
-                    // Generate a bunch of fake posts
-                    ...Array(10).fill().map((_, index) => {
-                        return {
-                            title: `Post ${index}`,
-                            date: new Date().toLocaleDateString(),
-                            content: [...Array(300)].map(() => Math.random().toString(36)[2]).join(''),
-                            icon: "fas fa-file-alt"
-                        };
-                    })
-                ]}
-              
                 postEvent = {(post) => {
-                    console.log(post);
                     setActivePost(post);
                 }}
             />
