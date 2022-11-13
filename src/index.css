@@ -32,9 +32,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-b, strong, h1, h2, h3, h4, h5, h6, p {
+b, strong, h1, h2, h3, h4, h5, h6 {
   font-family: 'Gotham Black', sans-serif;
   margin: 0px;
+}
+
+p {
+    margin: 0px;
 }
 
 a {
