@@ -3,6 +3,7 @@ import React from "react";
 import axios from "axios";
 
 import Spinner from "./Spinner.js";
+import DebugPost from "./DebugPosts/DebugPost.xml"
 
 class PostList extends React.Component {
     constructor(props) {
@@ -11,7 +12,6 @@ class PostList extends React.Component {
         this.state = {
             posts: []
         };
-
     }
 
     componentDidMount() {
@@ -25,11 +25,17 @@ class PostList extends React.Component {
                 return axios.get(`https://raw.githubusercontent.com/HooferDevelops/hooferdevelops.github.io/POSTS/${post}`);
             });
 
+            // Load the debug post if this is the debug build.
+            if (process.env.NODE_ENV === "development") {
+                posts.push(axios.get(DebugPost));
+            }
+
+            // Reverse the order of the posts so that the newest post is first.
+            posts.reverse();
+
             Promise.all(posts).then((responses) => {
                 responses = responses.map((post) => {
                     let parser = new DOMParser();
-
-                    console.log(post.data);
 
                     let document = parser.parseFromString(post.data, "text/xml");
 
@@ -37,7 +43,7 @@ class PostList extends React.Component {
                     
                     // Get the multiline content of the post. Add a line break to the new lines, except for the first one.
                     let content = document.querySelector("content").innerHTML.replace(/\n/g, "<br />").replace("<br />", "");
-
+ 
                     // Limit the length of the post to 500 characters.
                     let shortenedContent = content.substring(0, 300) + (content.length > 300 ? "..." : "");
 
@@ -56,6 +62,19 @@ class PostList extends React.Component {
                 });
 
                 this.setState({ posts: responses });
+
+                // Check if search parameter exists for a post.
+                let searchParams = new URLSearchParams(window.location.search);
+
+                if (searchParams.has("post")) {
+                    // Get the post from the search parameter.
+                    let post = responses.find((post) => {
+                        return post.title === searchParams.get("post");
+                    });
+
+                    // Select the post.
+                    this.selectPost({ target: { value: post } });
+                }
             });
         });
     }

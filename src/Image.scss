@@ -1,0 +1,23 @@
+.image {
+    margin: 10px;
+    display: inline-flex;
+
+    border-radius: 3px;
+    border: 1px solid var(--link-color);
+
+    max-width: 100%;
+
+    .spinner {
+        width: 75%;
+        height: 75%;
+    }
+
+    .spoilered {
+        filter: blur(3px) brightness(0.5);
+    }
+
+    img {
+        transition: .25s linear filter;
+        max-width: 100%;
+    }
+}
