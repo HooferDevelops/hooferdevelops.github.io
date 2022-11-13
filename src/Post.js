@@ -41,7 +41,7 @@ class Post extends React.Component {
                         </div>
                         <div className="spacer"></div>
                         <div className="post-content">
-                            {xmlToReact.convert(`<div>${this.props.content}</div>`)}
+                            {xmlToReact.convert(`<p>${this.props.content}</p>`)}
                         </div>
                     </div>
                 </div>
