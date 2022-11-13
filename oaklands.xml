@@ -4,31 +4,31 @@
   <icon>fa-solid fa-tree</icon>
   <content>
     <h2>Precursor</h2>
-    I felt as if I should share my thought process and the way I went about generating the trees in Oaklands. Of course, I would not have been able to get this far without the help of the community, so I would like to thank everyone who has helped me along the way. I hope this information is helpful for others who would like to make their own tree generation system.
+    <p>I felt as if I should share my thought process and the way I went about generating the trees in Oaklands. Of course, I would not have been able to get this far without the help of the community, so I would like to thank everyone who has helped me along the way. I hope this information is helpful for others who would like to make their own tree generation system.</p>
 
     <h2>How it works</h2>
-    Oaklands trees are generated using individal OOP <i>(Object Oriented Programming)</i> classes with custom functions for each "tick." The tree class is then called in the main game loop, and the tree is generated over time. Trees have what are called a maximum tick count, this tick count is assigned to both the <i>root</i> tree class as well as the tree <i>segment</i> classes.
+    <p>Oaklands trees are generated using individal OOP <i>(Object Oriented Programming)</i> classes with custom functions for each "tick." The tree class is then called in the main game loop, and the tree is generated over time. Trees have what are called a maximum tick count, this tick count is assigned to both the <i>root</i> tree class as well as the tree <i>segment</i> classes.</p>
 
-    Tree segments are considered to be the individual logs on the tree. These segments have their own individual traits such as color, material, size, and CFrame. The segment class simply contains data about the tree, the root class still manages <i>what</i> the data for these segment classes should be.
+    <p>Tree segments are considered to be the individual logs on the tree. These segments have their own individual traits such as color, material, size, and CFrame. The segment class simply contains data about the tree, the root class still manages <i>what</i> the data for these segment classes should be.</p>
 
-    The root class recursively goes through all of the children segments, checks their tick count, ticks them, and updates the existing attributional data. The root class also handles the tree's growth, and the tree's death. The root class also handles the tree's leaves, and the tree's fruit <i>(soon...)</i>.
+    <p>The root class recursively goes through all of the children segments, checks their tick count, ticks them, and updates the existing attributional data. The root class also handles the tree's growth, and the tree's death. The root class also handles the tree's leaves, and the tree's fruit <i>(soon...)</i>.</p>
 
     <h2>Generation Regions</h2>
-    This is something I have not publicly shared anywhere else, really, as no one has ever asked! The generation regions are an easy way to seperate all the tree species into areas that we want. For example, if we were to want palm trees, we would only want them to spawn on the sand; we would not want them to spawn on the grass. This is where the generation regions come in. We can simply create a new generation region, and set the region's type to "sand." Then, we can add the palm tree to the generation region, apply a weighted spawn chance, and it will only spawn on the sand.
+    <p>This is something I have not publicly shared anywhere else, really, as no one has ever asked! The generation regions are an easy way to seperate all the tree species into areas that we want. For example, if we were to want palm trees, we would only want them to spawn on the sand; we would not want them to spawn on the grass. This is where the generation regions come in. We can simply create a new generation region, and set the region's type to "sand." Then, we can add the palm tree to the generation region, apply a weighted spawn chance, and it will only spawn on the sand.</p>
 
-    Our weight system allows us to have a higher chance of a tree spawning in a certain region, or a lower chance. For example, we could have a weighted spawn chance of <b>1 for the oak tree</b>, and a weighted spawn chance of <b>10 for the birch tree</b>. This would mean that the birch tree would have a <b>10x higher chance</b> of spawning than the oak tree. This is useful for when we want to have a certain tree species be more common than others.
+    <p>Our weight system allows us to have a higher chance of a tree spawning in a certain region, or a lower chance. For example, we could have a weighted spawn chance of <b>1 for the oak tree</b>, and a weighted spawn chance of <b>10 for the birch tree</b>. This would mean that the birch tree would have a <b>10x higher chance</b> of spawning than the oak tree. This is useful for when we want to have a certain tree species be more common than others.</p>
 
-    The determination for the spawn point is based on the volume of each region part. The higher the volume, the higher the chance of a tree spawning. This is allows us to <i>partition</i> the areas for the trees to spawn in.
+    <p>The determination for the spawn point is based on the volume of each region part. The higher the volume, the higher the chance of a tree spawning. This is allows us to <i>partition</i> the areas for the trees to spawn in.</p>
 
     <h2>Why this method?</h2>
-    This method was chosen because it allows for both a diverse and unique tree generation process. It also allows for the trees to be generated over time, and not instantly. This allows for the trees to be generated in a more natural way, and also allows for the trees to be generated in a more efficient way. This method also allows for the trees to be generated in a way that is easy to maintain, and easy to expand upon.
+    <p>This method was chosen because it allows for both a diverse and unique tree generation process. It also allows for the trees to be generated over time, and not instantly. This allows for the trees to be generated in a more natural way, and also allows for the trees to be generated in a more efficient way. This method also allows for the trees to be generated in a way that is easy to maintain, and easy to expand upon.</p>
 
-    This method originated from my friend, boneless <i>(boneless#0738 on Discord)</i>. I used the base idea of individual functions for each segment, and then expanded upon it to create the current system. Unlike his system, mine uses a tick-based system, but without him I would not have been able to create this system.
+    <p>This method originated from my friend, boneless <i>(boneless#0738 on Discord)</i>. I used the base idea of individual functions for each segment, and then expanded upon it to create the current system. Unlike his system, mine uses a tick-based system, but without him I would not have been able to create this system.</p>
 
-    As I have stated, this system is very unique. Because of this, I can create a few interesting trees. A lot of suggestions given to me were not possible before, but now they are. Here are a few I have received, with attribution of course! These are not confirmed to be implemented, but I might in the future.
+    <p>As I have stated, this system is very unique. Because of this, I can create a few interesting trees. A lot of suggestions given to me were not possible before, but now they are. Here are a few I have received, with attribution of course! These are not confirmed to be implemented, but I might in the future.</p>
 
     <h2>Suggestion Trees</h2>
-    Like I have said above, the community has given us some great ideas for trees. Here are a few of them, with attribution of course!
+    <p>Like I have said above, the community has given us some great ideas for trees. Here are a few of them, with attribution of course!</p>
 
     <img src="https://cdn.discordapp.com/attachments/1039989031473258616/1040687988931309639/unknown.png" alt="Suggestion Tree" />
     <img src="https://cdn.discordapp.com/attachments/1039989031473258616/1040311532346683453/image.png" alt="Suggestion Tree" />
@@ -42,14 +42,14 @@
     <sp><i><b>Zkiller467570</b> on Roblox</i></sp>
         
     <h2>Official Oaklands Trees</h2>
-    Here is a showcase of some of the trees in Oaklands! These designs are not final, and of course, we will be adding a <i>LOT</i> more.
+    <p>Here is a showcase of some of the trees in Oaklands! These designs are not final, and of course, we will be adding a <i>LOT</i> more.</p>
 
     <img src="https://cdn.discordapp.com/attachments/991493653811970119/1041214403879653428/RobloxStudioBeta_Oe7qeMvHqi.png" alt="Oak Tree" />
     <img src="https://cdn.discordapp.com/attachments/991493653811970119/1041214404190019644/RobloxStudioBeta_i2vWQxxRjQ.png" alt="Birch Tree" />
     <img src="https://cdn.discordapp.com/attachments/991493653811970119/1041214404626235422/RobloxStudioBeta_8eyNOu4CyP.png" alt="Oaklands Trees" />
 
     <h2>Conclusion</h2>
-    I hope this information is helpful for others who would like to make their own tree generation system. Obviously, I did not go into a large amount of detail, but I hope this is enough to inform you a bit more! If you want access to an early-build of the code, you may do so through the <a href="https://www.roblox.com/games/10142430627/Open-Source-Tree-Generation">open source project on Roblox</a>.
+    <p>I hope this information is helpful for others who would like to make their own tree generation system. Obviously, I did not go into a large amount of detail, but I hope this is enough to inform you a bit more! If you want access to an early-build of the code, you may do so through the <a href="https://www.roblox.com/games/10142430627/Open-Source-Tree-Generation">open source project on Roblox</a>.</p>
 
     <h2>Links</h2>
     <a href="https://www.roblox.com/games/10142430627/Open-Source-Tree-Generation">Open Source Tree Generation</a>
