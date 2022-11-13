@@ -24,7 +24,8 @@ class Image extends React.Component {
                 <img 
                     className={this.state.spoilered ? "spoilered" : null} 
                     style={{display: this.state.loaded ? "initial" : "none"}} 
-                    src={this.props.src} onLoad={() => this.setState({loaded: true})} 
+                    src={this.props.src} onLoad={() => this.setState({loaded: true})}
+                    alt={this.props.alt}
                 />
                 {!this.state.loaded && <Spinner />}
             </div>
