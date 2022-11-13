@@ -15,6 +15,7 @@ const xmlToReact = new XMLToReact({
     h1: (attrs) => ({ type: 'h1', props: attrs }),
     h2: (attrs) => ({ type: 'h2', props: attrs }),
     sp: (attrs) => ({ type: SmallParagraph, props: attrs }),
+    p: (attrs) => ({ type: 'p', props: attrs })
 });
 
 class Post extends React.Component {
