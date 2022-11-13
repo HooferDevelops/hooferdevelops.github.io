@@ -14,10 +14,9 @@
   --link-color: #B3A9F1;
 }
 
-::-moz-selection, ::selection {
+::selection {
   color: var(--background-color);
   background: var(--link-color);
-  text-shadow: 1px 1px 3px var(--background-color);
 }
 
 html, body, #root, .App {
